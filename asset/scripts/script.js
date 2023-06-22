@@ -62,9 +62,6 @@ function rollBall() {
     } else {
         alert('Sorry!!! You have exceeded the number of frame')
     }
-
-    console.log(pinsHitFirst, pinsHitSecond)
-    console.log(count)
 }
 
 function getRandomPin(remainingPins) {
