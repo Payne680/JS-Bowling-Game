@@ -2,83 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoring a bowling game</title>
-    <link rel="stylesheet" href="asset/styles/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/styles/style.css" />
+    <title>Bowling Game</title>
 </head>
 
 <body>
-    <h1 class="title">Bowling Game</h1>
-    <div id="buttons" class="buttons">
-        Pins Hit:
-        <button type="button" onclick="pinHit(0)" class="btn btn-primary">Gutter</button>
-        <button type="button" onclick="pinHit(1)" class="btn btn-primary">1</button>
-        <button type="button" onclick="pinHit(2)" class="btn btn-primary">2</button>
-        <button type="button" onclick="pinHit(3)" class="btn btn-primary">3</button>
-        <button type="button" onclick="pinHit(4)" class="btn btn-primary">4</button>
-        <button type="button" onclick="pinHit(5)" class="btn btn-primary">5</button>
-        <button type="button" onclick="pinHit(6)" class="btn btn-primary">6</button>
-        <button type="button" onclick="pinHit(7)" class="btn btn-primary">7</button>
-        <button type="button" onclick="pinHit(8)" class="btn btn-primary">8</button>
-        <button type="button" onclick="pinHit(9)" class="btn btn-primary">9</button>
-        <button type="button" onclick="pinHit(10)" class="btn btn-primary">10</button>
+    <div class="page-content">
+        <div class="container">
+            <p class="title">Scoring a Bowling Game</p>
+            <table class='scorecard' cellpadding='1' cellspacing='3'>
+                <tr>
+                    <th>Frame 1</th>
+                    <th>Frame 2</th>
+                    <th>Frame 3</th>
+                    <th>Frame 4</th>
+                    <th>Frame 5</th>
+                    <th>Frame 6</th>
+                    <th>Frame 7</th>
+                    <th>Frame 8</th>
+                    <th>Frame 9</th>
+                    <th>Frame 10</th>
+                </tr>
+                <tr>
+                    <td class="score 1"></td>
+                    <td class="score 2"></td>
+                    <td class="score 3"></td>
+                    <td class="score 4"></td>
+                    <td class="score 5"></td>
+                    <td class="score 6"></td>
+                    <td class="score 7"></td>
+                    <td class="score 8"></td>
+                    <td class="score 9"></td>
+                    <td class="score 10"></td>
+                </tr>
+                <tr>
+                    <td class="total-score 1"></td>
+                    <td class="total-score 2"></td>
+                    <td class="total-score 3"></td>
+                    <td class="total-score 4"></td>
+                    <td class="total-score 5"></td>
+                    <td class="total-score 6"></td>
+                    <td class="total-score 7"></td>
+                    <td class="total-score 8"></td>
+                    <td class="total-score 9"></td>
+                    <td class="total-score 10"></td>
+                </tr>
+            </table>
+            <div id="btns">
+                <button class="btn">Roll the ball</button>
+                <button class="btn1">Reset</button>
+            </div>
+        </div>
     </div>
-    <div id='scorecard'>
-        <table id='scorecardTable' class='scorecard' cellpadding='1' cellspacing='0'>
-            <tr>
-                <th colspan='6'>Frame 1</th>
-                <th colspan='6'>Frame 2</th>
-                <th colspan='6'>Frame 3</th>
-                <th colspan='6'>Frame 4</th>
-                <th colspan='6'>Frame 5</th>
-                <th colspan='6'>Frame 6</th>
-                <th colspan='6'>Frame 7</th>
-                <th colspan='6'>Frame 8</th>
-                <th colspan='6'>Frame 9</th>
-                <th colspan='6'>Frame 10</th>
-            </tr>
-            <tr>
-                <td colspan='3'></td>
-                <td id="frame1" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame2" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame3" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame4" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame5" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame6" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame7" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame8" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame9" colspan='3'></td>
-                <td colspan='3'></td>
-                <td id="frame10" colspan='3'></td>
-            </tr>
-            <tr>
-                <td colspan='6' id="marker0"></td>
-                <td colspan='6' id="marker1"></td>
-                <td colspan='6' id="marker2"></td>
-                <td colspan='6' id="marker3"></td>
-                <td colspan='6' id="marker4"></td>
-                <td colspan='6' id="marker5"></td>
-                <td colspan='6' id="marker6"></td>
-                <td colspan='6' id="marker7"></td>
-                <td colspan='6' id="marker8"></td>
-                <td colspan='6' id="marker9"></td>
-            </tr>
-        </table>
-    </div>
-    <h1 id="comments" class="notice"></h1>
-    <h1 id="gameover" class="notice"></h1>
-    <h1 id="yourscore" class="final-score"></h1>
-    <div id="playagain"></div>
     <script src="asset/scripts/script.js"></script>
 </body>
 
