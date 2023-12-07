@@ -1,0 +1,82 @@
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(95deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  max-width: 950px;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.btn,
+.btn1 {
+  text-align: center;
+  border: none;
+  padding: 15px 20px;
+  background-color: #49a09d;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#playagain {
+  text-align: center;
+}
+table.scorecard {
+  margin: auto;
+  align-items: center;
+  margin-top: 10%;
+  width: 90%;
+  height: 18vh;
+  font-size: 12px;
+  border: 1px solid;
+  text-align: center;
+  table-layout: fixed;
+  margin-bottom: 40px;
+}
+table.scorecard th,
+tr,
+td {
+  padding: 0;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+table.scorecard th {
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+table.scorecard th:not(:last-child) {
+  border-right: 1px solid;
+}
+table.scorecard td {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+}
+table.scorecard tr td:not(:last-child) {
+  border-right: 1px solid;
+}
+table.scorecard tr:nth-child(2) td:nth-child(even) {
+  border-bottom: 1px solid;
+}
+table.scorecard tr:nth-child(2) td:last-child {
+  border-bottom: 1px solid;
+}
